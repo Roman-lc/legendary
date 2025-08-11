@@ -1,0 +1,227 @@
+#root {
+  text-align: center;
+}
+
+.body-fondo {
+  background-image: url(/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dot {
+  animation: blink 1.2s infinite;
+  opacity: 0;
+}
+
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+.dot:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes blink {
+  0%, 20% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Top {
+  width: 33vw;
+  background-color: lightcoral;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria, .actividad {
+  height: 50%;
+}
+
+.galeria {
+  background-color: lightblue;
+}
+
+.actividad {
+  background-color: lightgreen;
+}
+
+
+
+.efecto-sombra {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+    3px 3px 0 #222,   /* sombra abajo a la derecha */
+    6px 6px 0 #222,   /* sombra más abajo */
+    9px 9px 0 #222;   /* sombra más larga */
+  /* background-color: black; */ /* para mejor contraste */
+  display: inline-block;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.container-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* alineo la imagen arriba */
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-container img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;     /* para que la imagen se enfoque en la parte superior */
+}
+
+
+
+
+
+@keyframes aparecer-mover {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rebote {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-15px) scale(1.1);
+  }
+  70% {
+    transform: translateY(5px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes zoom-y-giro {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}
+
+@keyframes girar-infinito {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes zoom-rotate-in {
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-8deg);
+  }
+}
+
+/* Texto inicial */
+.intro {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer-mover 1s forwards;
+  animation-delay: 0s;
+}
+
+/* "Esperenlo" */
+.esperenlo {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer-mover 1s forwards;
+  animation-delay: 1s;
+}
+
+/* Puntos con rebote */
+.wait {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: rebote;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-fill-mode: forwards;
+}
+
+.punto1 { animation-delay: 2s; }
+.punto2 { animation-delay: 3s; }
+.punto3 { animation-delay: 4s; }
+
+/* Contenedor de palabra y estrella */
+.word-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Estrella que crece y gira 1 vez, luego gira infinito */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  font-size: 3.5rem;
+  color: gold;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+
+  /* Estado inicial para evitar que flote */
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+
+  /* Animaciones */
+  animation: zoom-y-giro 0.8s ease backwards, girar-infinito 4s linear 0.8s infinite forwards;
+  animation-delay: 5.1s, 5.9s;
+  animation-fill-mode: backwards, forwards;
+}
+
+/* Palabra con zoom y rotación fija */
+.word {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.5) rotate(-8deg);
+  animation: zoom-rotate-in 1s ease forwards;
+  animation-delay: 5.9s;
+  animation-fill-mode: forwards;
+}

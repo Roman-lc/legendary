@@ -1,0 +1,67 @@
+[
+  { 
+    "id": 1, 
+    "nombre": "Reto Sikowits", 
+    "descripcion": "Elige un personaje. Conviértete en ese personaje. Vívelo. Respíralo. Y bajo ningún concepto —repito, NINGUNO— rompas el personaje. Incluso si un oso panda te pide la hora. Especialmente si un oso panda te pide la hora." 
+  },
+  { 
+    "id": 2, 
+    "nombre": "Barnie's Chicken", 
+    "descripcion": "Todo el grupo conspira para convencer a una persona de que algo del pasado fue completamente distinto. El evento, el lugar, el pollo… TODO. Mientras más absurdo y específico, mejor. Si empieza a dudar de su propia memoria, vas ganando. Challenge accepted." 
+  },
+  { 
+    "id": 3, 
+    "nombre": "Suit up Spidy", 
+    "descripcion": "Durante un día entero, cada miembro del grupo debe convertirse en su propia y original versión de Spider-Man. Traje, nombre, poderes ridículos… todo. Si alguien pregunta, actúa como si fuera la cosa más normal del mundo. Porque en tu universo, lo es." 
+  },
+  { 
+    "id": 4, 
+    "nombre": "Charla TEDMosby", 
+    "descripcion": "El grupo debe dar una charla TED improvisada sobre un tema tan aburrido que podría poner a dormir a un cactus… pero con la pasión de un discurso que cambiará la historia. Bonus: cuanta más gente random se sume a escuchar, más legendario." 
+  },
+  { 
+    "id": 5, 
+    "nombre": "Sospechoso no encubierto", 
+    "descripcion": "Uno se viste de forma tan llamativa que es imposible no notarlo. Otro del grupo describe en voz alta —en un lugar público— su aspecto y un hábito extrañísimo… justo antes de que aparezca caminando como si nada." 
+  },
+  { 
+    "id": 6, 
+    "nombre": "Tu cara me suena", 
+    "descripcion": "Convéncelos de que te conocen de algún lugar. No importa si es mentira. Hazlo tan convincente que empiecen a inventar recuerdos contigo… y actúa como si todos fueran amigos de la infancia." 
+  },
+  { 
+    "id": 7, 
+    "nombre": "Las traes", 
+    "descripcion": "Consigue que alguien te traiga algo sin pedirlo directamente. Solo carisma, indirectas y manipulación sutil digna de un maestro Jedi con traje. Barney estaría orgulloso." 
+  },
+  { 
+    "id": 8, 
+    "nombre": "Tienes una Bingo-Personalidad", 
+    "descripcion": "Completa tu cartón de personalidad: coqueteo casual, anécdota épica, referencia pop, comentario sarcástico y algo completamente fuera de contexto. Si logras las cinco en una misma conversación, ¡Bingo!" 
+  },
+  { 
+    "id": 9, 
+    "nombre": "Gran historia, pequeña mentira", 
+    "descripcion": "Cuenta una historia 90% real y 10% embellecida. El truco: que nadie pueda adivinar qué parte es inventada. Si empiezan a dudar de todo, has ganado." 
+  },
+  { 
+    "id": 10, 
+    "nombre": "Véndeme este lápiz", 
+    "descripcion": "Sé el Jordan Belfort del papel higiénico. Tu misión: venderle a un desconocido un objeto completamente inútil… como si fuera lo más valioso del mundo. Puede ser un lápiz, una piedra o una servilleta usada. Bonus si usas frases motivacionales ridículas y te crees tu propia mentira. True story." 
+  },
+  {
+    "id": 11, 
+    "nombre": "Torneo de PowerPoints",
+    "descripcion": "Crea una presentación de PowerPoint sobre un tema absurdo y compite por el título de 'Maestro del PowerPoint'. El ganador recibe una medalla hecha con clips y una hoja de papel. ¡Que empiece la batalla de diapositivas!" 
+  },
+  {
+    "id": 12, 
+    "nombre": "El juego de las miradas",
+    "descripcion": "Durante un día entero, cada miembro del grupo debe mantener contacto visual constante con los demás. Si alguien parpadea o desvía la mirada, pierde. El último en pie gana el título de 'Maestro del Contacto Visual'." 
+  },
+  {
+    "id": 13, 
+    "nombre": "La batalla de las frases célebres",
+    "descripcion": "Cada miembro del grupo debe usar una frase célebre famosa en una conversación cotidiana. El primero que logre que alguien responda con otra frase célebre gana. ¡Que empiece la guerra de citas!" 
+  }
+]
